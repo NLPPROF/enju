@@ -122,6 +122,7 @@ blockquote {
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color:#333;
+  background: #f0f0f0;
   font-size:12px;
 }
 
@@ -157,10 +158,18 @@ img {
   max-width:100%;
 }
 
+img.example {
+  border: 1px solid #000000;
+  float: right;
+  max-width: 30%;
+}
+
 header {
-  width:270px;
-  float:left;
-  position:fixed;
+/*  width:270px; */
+/*  float:left;
+  position:fixed; */
+  border-bottom: 1px solid #e0e0e0;
+  margin: 20px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -168,14 +177,15 @@ header ul {
   list-style:none;
   height:40px;
   padding:0;
-  background: #f4f4f4;
-  border-radius:5px;
+  margin:0;
+  background: #000;
+/*  border-radius:5px; */
   border:1px solid #e0e0e0;
-  width:270px;
+  width: 600px;
 }
 
 header li {
-  width:89px;
+  width:119px;
   float:left;
   border-right:1px solid #e0e0e0;
   height:40px;
@@ -191,12 +201,13 @@ header li:last-child a {
 
 header ul a {
   line-height:1;
-  font-size:11px;
-  color:#999;
+  font-size:14px;
+  color:#ffffff;
   display:block;
   text-align:center;
-  padding-top:6px;
+  padding-top:12px;
   height:34px;
+  display:block;
 }
 
 header ul a:hover {
@@ -212,9 +223,9 @@ strong {
   font-weight:700;
 }
 
-header ul li + li + li {
+header ul li + li + li + li + li {
   border-right:none;
-  width:89px;
+  width:119px;
 }
 
 header ul a strong {
@@ -224,9 +235,9 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+/*  width:500px;
   float:right;
-  padding-bottom:50px;
+  padding-bottom:50px; */
 }
 
 small {
@@ -242,8 +253,8 @@ hr {
 
 footer {
   width:270px;
-  float:left;
-  position:fixed;
+/*  float:left;
+  position:fixed; */
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
@@ -310,7 +321,7 @@ footer {
     width:99%;
   }
 
-  header li, header ul li + li + li {
+  header li, header ul li + li + li + li + li {
     width:33%;
   }
 }

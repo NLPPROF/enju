@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Enju by mynlp</title>
+    <title>Enju - An English parser</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -15,23 +15,35 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Enju</h1>
-        <p>An HPSG parser</p>
+        <h1><img src="images/enju.png" alt="Enju - A fast, accurate, and deep parser for English"/></h1>
 
-        <p class="view"><a href="https://github.com/mynlp/enju">View the Project on GitHub <small>mynlp/enju</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/mynlp/enju/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/mynlp/enju/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/mynlp/enju">View On <strong>GitHub</strong></a></li>
-        </ul>
+	<ul>
+	  <li><a href="index.html">About</a></li>
+	  <li><a href="examples.html">Examples</a></li>
+	  <li><a href="howtouse.html">How to use</a></li>
+	  <li><a href="references.html">References</a></li>
+          <li><a href="https://github.com/mynlp/enju">View on GitHub</a></li>
+	</ul>
+	
       </header>
+
       <section>
         <h1>
 <a id="about-enju" class="anchor" href="#about-enju" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Enju</h1>
 
-<p>Enju is an accurate natural language parser for English. With a wide-coverage probabilistic HPSG grammar [1-7] and an efficient parsing algorithm [8-11], this parser can effectively analyze syntactic/semantic structures of English sentences and provide a user with phrase structures and predicate-argument structures. Those outputs would be especially useful for high-level NLP applications, including information extraction, automatic summarization, question answering, and machine translation, where the "meaning" of a sentence plays a central role.</p>
+<img class="example" src="images/parsetree.png" alt="example parse tree" />
+
+<p>Enju is an accurate natural language parser for English. With a
+  wide-coverage probabilistic HPSG grammar [1-7] and an efficient
+  parsing algorithm [8-11], this parser can effectively analyze
+  syntactic/semantic structures of English sentences and provide a
+  user with phrase structures and predicate-argument structures. Those
+  outputs would be especially useful for high-level NLP applications,
+  including information extraction, automatic summarization, question
+  answering, and machine translation, where the "meaning" of a
+  sentence plays a central role.
+</p>
+
 
 <p>The main features of the Enju parser are:</p>
 
@@ -54,6 +66,9 @@
 <li>Output n-best parse results: specify the option <code>-N</code>. This is an experimental function, and parsing speed gets slower.</li>
 </ul>
       </section>
+
+      <hr/>
+
       <footer>
         <p>This project is maintained by <a href="https://github.com/mynlp">mynlp</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
